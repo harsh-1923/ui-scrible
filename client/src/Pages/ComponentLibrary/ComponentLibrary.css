@@ -1,0 +1,12 @@
+.comp-lib-wrap {
+  padding-top: 100px;
+}
+
+.link {
+  color: #eeeef0;
+  text-underline-offset: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}

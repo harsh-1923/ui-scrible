@@ -1,7 +1,14 @@
 .app {
   display: flex;
-  align-items: center;
   justify-content: center;
   width: 100dvw;
   height: 100dvh;
+}
+
+.basic-text {
+  color: #eeeef0;
+}
+
+.basic-text-muted {
+  color: #7b7b7b;
 }
