@@ -1,0 +1,41 @@
+.cdl-wrap {
+  overflow: hidden;
+}
+
+.cdl-item-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px;
+  height: 100px;
+  position: relative;
+  cursor: pointer;
+}
+
+.cdl-item-backdrop {
+  top: 50%;
+  left: 0;
+  height: 0;
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #eeeeee;
+  color: black;
+  user-select: none;
+}
+
+.cdl-backdrop-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.cdli-title {
+  font-weight: 400;
+}
+
+.cdl-item-backdrop:where([data-state="hovering"]) {
+  opacity: 0;
+}
