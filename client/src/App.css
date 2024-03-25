@@ -2,13 +2,13 @@
   display: flex;
   justify-content: center;
   width: 100dvw;
-  height: 100dvh;
+  /* height: 100dvh; */
 }
 
 .basic-text {
-  color: #eeeef0;
+  color: var(--text-primary);
 }
 
 .basic-text-muted {
-  color: #7b7b7b;
+  color: var(--text-secondary);
 }

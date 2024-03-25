@@ -1,0 +1,4 @@
+.infinite-scroller-demo {
+  padding: 40px var(--root-page-horizontal-padding);
+  width: 100%;
+}
