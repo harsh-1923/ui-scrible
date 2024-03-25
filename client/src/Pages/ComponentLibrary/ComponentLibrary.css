@@ -1,5 +1,5 @@
 .comp-lib-wrap {
-  padding-top: 100px;
+  padding: 100px var(--root-page-horizontal-padding);
 }
 
 .link {
