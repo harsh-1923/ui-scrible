@@ -1,5 +1,7 @@
 .comp-lib-wrap {
+  width: 100%;
   padding: 100px var(--root-page-horizontal-padding);
+  max-width: 900px;
 }
 
 .link {

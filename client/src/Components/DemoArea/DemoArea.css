@@ -9,6 +9,7 @@
   outline: var(--outline-muted);
   min-height: 20dvh;
   position: relative;
+  overflow: hidden;
 }
 
 .demo-area-button {

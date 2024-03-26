@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   width: 100dvw;
+  /* padding: 0px var(--root-page-horizontal-padding); */
   /* height: 100dvh; */
 }
 
