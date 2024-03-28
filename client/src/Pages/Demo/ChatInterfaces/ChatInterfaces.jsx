@@ -89,6 +89,9 @@ const ChatInterfaces = () => {
       <br />
       <br />
       <ChatVariant1 />
+      <small className="demo-label">
+        Swipe right to Read and Unread message.
+      </small>
 
       <div className="filler" />
     </div>

@@ -13,6 +13,8 @@ const SpotifyFilterDemo = () => {
       />
       <DemoArea>
         <SpotifyFilter />
+
+        <small className="demo-label">Tap to Select or deselect filters</small>
       </DemoArea>
     </div>
   );

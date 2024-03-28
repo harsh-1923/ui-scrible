@@ -27,3 +27,8 @@
 .filler {
   min-height: 60vh;
 }
+
+.demo-label {
+  margin-top: 20px;
+  color: var(--text-secondary);
+}
