@@ -1,0 +1,35 @@
+.asd-wrap {
+  width: 100%;
+  padding: 40px var(--root-page-horizontal-padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.banner-wrap {
+  width: 80%;
+  border-radius: inherit;
+  /* height: 400px; */
+  outline: var(--outline);
+  padding-top: 20px;
+  background-image: linear-gradient(45deg, #c2f3ff, #ffe0c2);
+}
+
+.icon-span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  margin: 20px;
+  width: 50px !important;
+  height: 50px !important;
+  color: black;
+}
+
+.banner-title {
+  padding: 20px;
+  color: black;
+}

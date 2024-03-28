@@ -16,6 +16,10 @@ const ComponentLibrary = () => {
         Cuberto Design List
         <ArrowOutwardIcon fontSize="small" />
       </Link>
+      <Link className="link" to="/components/chat-interfaces">
+        Experimenting with Chat Interface
+        <ArrowOutwardIcon fontSize="small" />
+      </Link>
       <Link className="link" to="/components/spotify-filters">
         Spotify Filter
         <ArrowOutwardIcon fontSize="small" />
@@ -24,6 +28,10 @@ const ComponentLibrary = () => {
         Infinite Scroller
         <ArrowOutwardIcon fontSize="small" />
       </Link>
+      {/* <Link className="link" to="/components/app-store-banner">
+        App Store Banner
+        <ArrowOutwardIcon fontSize="small" />
+      </Link> */}
     </div>
   );
 };

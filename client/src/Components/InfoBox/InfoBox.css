@@ -1,0 +1,25 @@
+.ib-wrap {
+  --ib-bg: #003362;
+  --ib-outline: #0090ff;
+  width: 100%;
+  background-color: var(--ib-bg);
+  margin-bottom: 10px;
+  outline: 1px solid var(--ib-outline);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+}
+
+.icon {
+  color: white;
+  stroke-width: 1px;
+}
+
+@media (width > 768px) {
+  .ib-wrap {
+    display: none;
+  }
+}

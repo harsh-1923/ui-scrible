@@ -1,6 +1,9 @@
 import React from "react";
 import "./CubertoDesignListDemo.css";
 import CubertoDesignList from "../../ui/CubertoDesignList/CubertoDesignList";
+import DemoTitle from "../../Components/DemoTitle/DemoTitle";
+import DemoArea from "../../Components/DemoArea/DemoArea";
+import InfoBox from "../../Components/InfoBox/InfoBox";
 
 const data = [
   { title: "Instagram", link: "www.google.com" },
@@ -15,7 +18,20 @@ const data = [
 const CubertoDesignListDemo = () => {
   return (
     <div className="cl-demo-wrap">
-      <CubertoDesignList items={data} />
+      <DemoTitle
+        title={"Cuberto Design List"}
+        desc={"On hover, an infinitely scrolling backdrop is revealed."}
+      />
+
+      <InfoBox>
+        <small>
+          This Component has Hover interactions. Viewing recomended on desktop.
+        </small>
+      </InfoBox>
+
+      <DemoArea>
+        <CubertoDesignList items={data} />
+      </DemoArea>
     </div>
   );
 };

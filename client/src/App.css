@@ -8,8 +8,22 @@
 
 .basic-text {
   color: var(--text-primary);
+  width: 100%;
+  text-align: left;
 }
 
 .basic-text-muted {
   color: var(--text-secondary);
+  width: 100%;
+  text-align: left;
+}
+
+.subheader {
+  width: 100%;
+  margin: 20px 0px;
+  text-align: left;
+}
+
+.filler {
+  min-height: 60vh;
 }

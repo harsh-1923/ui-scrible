@@ -5,6 +5,8 @@ import HomePage from "./Pages/HomePage/HomePage";
 import CubertoDesignListDemo from "./Pages/Demo/CubertoDesignListDemo";
 import SpotifyFilterDemo from "./Pages/Demo/SpotifyFilterDemo/SpotifyFilterDemo";
 import InfiniteScrollerDemo from "./Pages/Demo/InfiniteScroller/InfiniteScrollerDemo.jsx";
+import AppleStoreBannerDemo from "./Pages/Demo/AppleStoreBannerDemo/AppleStoreBannerDemo.jsx";
+import ChatInterfaces from "./Pages/Demo/ChatInterfaces/ChatInterfaces.jsx";
 
 function App() {
   return (
@@ -23,6 +25,15 @@ function App() {
         <Route
           path={"/components/infinite-scroller"}
           element={<InfiniteScrollerDemo />}
+        />
+        <Route
+          path={"/components/app-store-banner"}
+          element={<AppleStoreBannerDemo />}
+        />
+
+        <Route
+          path="/components/chat-interfaces"
+          element={<ChatInterfaces />}
         />
       </Routes>
     </main>

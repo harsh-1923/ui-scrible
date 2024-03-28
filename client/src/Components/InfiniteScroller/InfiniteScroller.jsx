@@ -6,7 +6,7 @@ const InfiniteScroller = ({ children }) => {
     <div className="is-wrap">
       {Array(10)
         .fill()
-        .map((idx) => {
+        .map((item, idx) => {
           return (
             <div key={idx} className="is-span">
               {children}
@@ -16,7 +16,7 @@ const InfiniteScroller = ({ children }) => {
 
       {Array(10)
         .fill()
-        .map((idx) => {
+        .map((item, idx) => {
           return (
             <div key={idx} className="is-span">
               {children}
