@@ -20,7 +20,7 @@ const ChatVariant1 = ({
   const handleDragEnd = (event, info) => {
     if (info.offset.x > 80) {
       setRead(!read);
-      toast("Switched");
+      toast(`Switched to ${read ? "Read" : "Unread"}`);
     }
   };
   return (

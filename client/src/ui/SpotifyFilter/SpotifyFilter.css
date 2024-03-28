@@ -35,3 +35,9 @@
 .filter:focus {
   outline: none !important;
 }
+
+@media (width < 400) {
+  .filter-group {
+    width: 100%;
+  }
+}
