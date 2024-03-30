@@ -2,16 +2,20 @@
   --chat-height: 80px;
   --backdrop-bg: #3b9eff;
   --backdrop-mute: #8e4ec6;
+  --chat-bg: black;
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 20px;
   height: var(--chat-height);
   max-width: 500px;
   position: relative;
   overflow: hidden;
+}
+
+.cv-2-wrap + .cv-2-wrap {
+  border-top: var(--outline-muted);
 }
 
 .cv-2-backdrop {
@@ -54,7 +58,7 @@
 }
 
 .dc-wrap {
-  background-color: black;
+  background-color: var(--chat-bg);
   display: flex;
   gap: 10px;
   align-items: center;

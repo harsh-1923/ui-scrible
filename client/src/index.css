@@ -11,8 +11,9 @@
   overscroll-behavior: none;
 
   --root-page-horizontal-padding: clamp(16px, 4vw, 5vw);
-  --background-dark: #111111;
-  --background-secondary: #ffffff1b;
+  --background-dark: #121113;
+  --background-secondary: #2a2a2a;
+
   --text-primary: #ffffffed;
   --text-secondary: #e5edfd7b;
 
@@ -53,4 +54,10 @@ button:focus {
 
 .muted {
   opacity: 0.6;
+}
+
+code {
+  background-color: var(--background-secondary);
+  padding: 2px 4px;
+  border-radius: 2px;
 }

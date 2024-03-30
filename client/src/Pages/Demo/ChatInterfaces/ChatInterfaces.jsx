@@ -12,6 +12,7 @@ import MarkChatUnreadIcon from "@mui/icons-material/MarkChatUnread";
 import ChatVariantV2 from "../../../ui/ChatVariantV2/ChatVariantV2";
 import ChatVariantV3 from "../../../ui/ChatVariantV3/ChatVariantV3";
 import SwipeToReply from "../../../ui/SwipeToReply/SwipeToReply";
+import ChatDemo from "../../../ui/ChatDemo/ChatDemo";
 
 const ChatVariant1 = ({
   name = "John Doe",
@@ -31,7 +32,7 @@ const ChatVariant1 = ({
   return (
     <div className="cv1-wrap">
       <div className="cv1-backdrop">
-        {read ? <MarkChatReadIcon /> : <MarkChatUnreadIcon />}
+        {!read ? <MarkChatReadIcon /> : <MarkChatUnreadIcon />}
       </div>
 
       <motion.div
@@ -85,23 +86,44 @@ const ChatInterfaces = () => {
       <p className="subheader">Swipe Interactions</p>
 
       <p className="basic-text-muted">
-        Swipe interactions are simple, intuitive and widely used.
+        Swipe interactions are simple, intuitive and widely used in chat
+        interfaces. Different apps and opertaing systems use swipe gestures for
+        different uses.
+        <br />
+        <br />
+        The most common application of swipes are to toggle between two states.
+        For example, swiping right can switch between Read and Unread states.
       </p>
-      <br />
+
+      <ChatDemo label={["Swipe Right to Read and Unread Messages"]}>
+        <ChatVariant1 />
+      </ChatDemo>
 
       <br />
-      <br />
-      <ChatVariant1 />
-      <small className="demo-label">
-        Swipe Right to Read and Unread message.
-      </small>
 
-      <ChatVariantV2 />
+      <p className="basic-text-muted">
+        The swipe action is only triggered when the{" "}
+        <code>swipe amount is more than a minimum threshold.</code>
+        <br />
+        In this case, the minimum threshold is 100px. The icon in the backdrop
+        of the message, shows the new state to be adopted once the swipe is
+        complete.
+      </p>
 
+      <ChatDemo
+        label={[
+          "Swipe Right to Read and Unread message.",
+          "Swipe Left to Mute and Unmute message",
+        ]}
+      >
+        <ChatVariantV2 />
+        <ChatVariantV2 />
+      </ChatDemo>
+      {/* 
       <small className="demo-label">
         Swipe Right to Read and Unread message. <br />
         Swipe Left to Mute and Unmute message
-      </small>
+      </small> */}
 
       {/* <ChatVariantV3 /> */}
 
