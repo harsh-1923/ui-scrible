@@ -1,0 +1,121 @@
+.cv-2-wrap {
+  --chat-height: 80px;
+  --backdrop-bg: #3b9eff;
+  --backdrop-mute: #8e4ec6;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  height: var(--chat-height);
+  max-width: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cv-2-backdrop {
+  position: absolute;
+  width: 100%;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: -100;
+}
+
+.cv-2-icon1 {
+  background-color: var(--backdrop-bg);
+  width: 50%;
+  height: var(--chat-height);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.cv-2-icon2 {
+  background-color: var(--backdrop-mute);
+  width: 50%;
+  height: var(--chat-height);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.cv-2-chat-wrap {
+  width: 100%;
+  height: 100%;
+  height: 30px;
+  max-width: 500px;
+  height: var(--chat-height);
+  background-image: linear-gradient(to right, gold, red);
+}
+
+.dc-wrap {
+  background-color: black;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.dc-chat-details {
+  width: 100%;
+}
+
+.dc-chat-row1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dc-chat-row2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dc-pp {
+  height: 80%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-image: linear-gradient(135deg, blue, red);
+}
+
+.dc-chat-name {
+  font-weight: 400;
+}
+
+.dc-chat-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.dc-chat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dc-read-circle {
+  width: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.dc-read-circle:where([data-state-read="true"]) {
+  background-color: var(--backdrop-bg);
+}
+
+.small-icon {
+  scale: 0.7;
+}

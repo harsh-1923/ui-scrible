@@ -44,3 +44,7 @@ button:focus {
   outline: var(--button-outline);
   outline-offset: 3px;
 }
+
+.muted {
+  opacity: 0.6;
+}

@@ -9,6 +9,8 @@ import DemoArea from "../../../Components/DemoArea/DemoArea";
 import { motion } from "framer-motion";
 import MarkChatReadIcon from "@mui/icons-material/MarkChatRead";
 import MarkChatUnreadIcon from "@mui/icons-material/MarkChatUnread";
+import ChatVariantV2 from "../../../ui/ChatVariantV2/ChatVariantV2";
+import ChatVariantV3 from "../../../ui/ChatVariantV3/ChatVariantV3";
 
 const ChatVariant1 = ({
   name = "John Doe",
@@ -18,11 +20,13 @@ const ChatVariant1 = ({
   const [read, setRead] = React.useState(false);
 
   const handleDragEnd = (event, info) => {
+    console.log(info);
     if (info.offset.x > 80) {
       setRead(!read);
       toast(`Switched to ${read ? "Read" : "Unread"}`);
     }
   };
+
   return (
     <div className="cv1-wrap">
       <div className="cv1-backdrop">
@@ -92,6 +96,10 @@ const ChatInterfaces = () => {
       <small className="demo-label">
         Swipe right to Read and Unread message.
       </small>
+
+      <ChatVariantV2 />
+
+      {/* <ChatVariantV3 /> */}
 
       <div className="filler" />
     </div>

@@ -16,6 +16,7 @@
 }
 
 .cv1-wrap {
+  --chat-height: 80px;
   --backdrop-bg: #3b9eff;
   --chatv1-height: 80px;
   background-color: red;

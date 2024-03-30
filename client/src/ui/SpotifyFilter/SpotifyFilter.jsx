@@ -1,7 +1,16 @@
 import React from "react";
 import "./SpotifyFilter.css";
 
-const list = ["Playlists", "Artists", "Music", "Cameo"];
+const list = ["Playlists", "Artists", "Albums", "Podcasts"];
+
+const items = [
+  { type: "", link: "" },
+  { type: "", link: "" },
+  { type: "", link: "" },
+  { type: "", link: "" },
+  { type: "", link: "" },
+  { type: "", link: "" },
+];
 
 const FilterItem = ({ item, idx }) => {
   const [selected, setSelected] = React.useState(false);
