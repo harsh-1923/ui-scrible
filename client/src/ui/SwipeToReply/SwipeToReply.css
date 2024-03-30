@@ -1,0 +1,109 @@
+.str-wrap {
+  --sender-bg: #2b292d;
+  --reciever-bg: #3b9eff;
+  background-color: black;
+  outline: var(--outline-muted);
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+.message-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: -100;
+}
+
+.reply-icon {
+  opacity: 0;
+}
+
+.reply-icon {
+  animation: reveal 1s ease-in-out;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+.message {
+  margin-left: -22px;
+  z-index: 100;
+  max-width: 80%;
+  display: flex;
+  align-items: center;
+  background-color: var(--sender-bg);
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin-bottom: 1px;
+}
+
+.message:where([data-state-sender="false"]) {
+  justify-content: flex-end;
+  background-color: var(--reciever-bg);
+}
+
+.message-wrap:where([data-state-sender="false"]) {
+  justify-content: flex-end;
+}
+
+.message-wrap.message-wrap:where([data-state-sender="false"])
+  + .message-wrap:where([data-state-sender="true"]) {
+  margin-top: 16px;
+}
+
+.message-wrap.message-wrap:where([data-state-sender="true"])
+  + .message-wrap:where([data-state-sender="false"]) {
+  margin-top: 16px;
+}
+
+.form {
+  position: relative;
+}
+
+.str-reply-text {
+  position: absolute;
+  top: -30px;
+  margin-top: 20px;
+  margin-bottom: -15px;
+  z-index: -100 !important;
+  background-color: black;
+  width: 100%;
+}
+
+.str-input {
+  width: 100%;
+  margin-top: 20px;
+
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  /* background-color: rgb(0, 0, 0); */
+  outline: var(--outline-muted);
+  z-index: 100;
+}
+
+.str-input:focus {
+  animation: in-focus 10ms ease-in-out;
+  outline-offset: 3px;
+  outline: 1px solid var(--reciever-bg);
+}
+
+@keyframes in-focus {
+  0% {
+    outline-offset: 0px;
+  }
+  100% {
+    outline-offset: 3px;
+  }
+}

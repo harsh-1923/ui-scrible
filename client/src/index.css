@@ -26,6 +26,12 @@
   background-color: var(--background-dark);
 }
 
+input[type="text"],
+input[type="number"],
+textarea {
+  font-size: 16px;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }

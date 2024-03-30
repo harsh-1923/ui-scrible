@@ -11,6 +11,7 @@ import MarkChatReadIcon from "@mui/icons-material/MarkChatRead";
 import MarkChatUnreadIcon from "@mui/icons-material/MarkChatUnread";
 import ChatVariantV2 from "../../../ui/ChatVariantV2/ChatVariantV2";
 import ChatVariantV3 from "../../../ui/ChatVariantV3/ChatVariantV3";
+import SwipeToReply from "../../../ui/SwipeToReply/SwipeToReply";
 
 const ChatVariant1 = ({
   name = "John Doe",
@@ -62,9 +63,9 @@ const ChatVariant1 = ({
 };
 
 const ChatInterfaces = () => {
-  useEffect(() => {
-    toast.info("This page is a work in progress.");
-  }, []);
+  // useEffect(() => {
+  //   toast.info("This page is a work in progress.");
+  // }, []);
   return (
     <div className="ci-wrap">
       <DemoTitle title={"Experimenting with Chat Interfaces"} />
@@ -87,9 +88,7 @@ const ChatInterfaces = () => {
         Swipe interactions are simple, intuitive and widely used.
       </p>
       <br />
-      {/* <DemoArea>
-        <ChatVariant1 />
-      </DemoArea> */}
+
       <br />
       <br />
       <ChatVariant1 />
@@ -105,6 +104,8 @@ const ChatInterfaces = () => {
       </small>
 
       {/* <ChatVariantV3 /> */}
+
+      <SwipeToReply />
 
       <div className="filler" />
     </div>
