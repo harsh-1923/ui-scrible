@@ -94,10 +94,15 @@ const ChatInterfaces = () => {
       <br />
       <ChatVariant1 />
       <small className="demo-label">
-        Swipe right to Read and Unread message.
+        Swipe Right to Read and Unread message.
       </small>
 
       <ChatVariantV2 />
+
+      <small className="demo-label">
+        Swipe Right to Read and Unread message. <br />
+        Swipe Left to Mute and Unmute message
+      </small>
 
       {/* <ChatVariantV3 /> */}
 
