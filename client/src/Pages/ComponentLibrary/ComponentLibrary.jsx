@@ -28,6 +28,10 @@ const ComponentLibrary = () => {
         Infinite Scroller
         <ArrowOutwardIcon fontSize="small" />
       </Link>
+      <Link className="link" to="/components/animated-modal">
+        Animated Mdoal
+        <ArrowOutwardIcon />
+      </Link>
       {/* <Link className="link" to="/components/app-store-banner">
         App Store Banner
         <ArrowOutwardIcon fontSize="small" />

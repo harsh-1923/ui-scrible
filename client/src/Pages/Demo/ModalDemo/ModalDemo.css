@@ -1,0 +1,9 @@
+.md-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px var(--root-page-horizontal-padding);
+  max-width: 800px;
+}

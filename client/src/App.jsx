@@ -7,6 +7,7 @@ import SpotifyFilterDemo from "./Pages/Demo/SpotifyFilterDemo/SpotifyFilterDemo"
 import InfiniteScrollerDemo from "./Pages/Demo/InfiniteScroller/InfiniteScrollerDemo.jsx";
 import AppleStoreBannerDemo from "./Pages/Demo/AppleStoreBannerDemo/AppleStoreBannerDemo.jsx";
 import ChatInterfaces from "./Pages/Demo/ChatInterfaces/ChatInterfaces.jsx";
+import ModalDemo from "./Pages/Demo/ModalDemo/ModalDemo.jsx";
 
 function App() {
   return (
@@ -35,6 +36,8 @@ function App() {
           path="/components/chat-interfaces"
           element={<ChatInterfaces />}
         />
+
+        <Route path="/components/animated-modal" element={<ModalDemo />} />
       </Routes>
     </main>
   );
